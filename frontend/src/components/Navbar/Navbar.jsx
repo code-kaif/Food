@@ -3,6 +3,8 @@ import "./Navbar.css";
 import { assets } from "../../assets/frontend_assets/assets";
 import { Link, useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
+import { IoLogOutSharp } from "react-icons/io5";
+import { FaBoxArchive } from "react-icons/fa6";
 
 const Navbar = ({ setShowLogin }) => {
   const navigate = useNavigate();
@@ -18,40 +20,10 @@ const Navbar = ({ setShowLogin }) => {
   return (
     <div className="navbar">
       <Link to="/">
-        <img src={assets.logo} alt="Logo" className="logo" />
+        <h1 className="logo">Parmal</h1>
       </Link>
-      <ul className="navbar-menu">
-        <Link
-          to={"/"}
-          onClick={() => setMenu("home")}
-          className={menu === "home" ? "active" : ""}
-        >
-          Home
-        </Link>
-        <a
-          href="#explore-menu"
-          onClick={() => setMenu("menu")}
-          className={menu === "menu" ? "active" : ""}
-        >
-          Menu
-        </a>
-        <a
-          href="#app-download"
-          onClick={() => setMenu("mobile-app")}
-          className={menu === "mobile-app" ? "active" : ""}
-        >
-          Mobile-App
-        </a>
-        <a
-          href="#footer"
-          onClick={() => setMenu("contact-us")}
-          className={menu === "contact-us" ? "active" : ""}
-        >
-          Contact-us
-        </a>
-      </ul>
+
       <div className="navbar-right">
-        <img src={assets.search_icon} alt="" />
         <div className="navbar-search-icon">
           <Link to="/cart">
             <img src={assets.basket_icon} alt="" />
@@ -65,12 +37,16 @@ const Navbar = ({ setShowLogin }) => {
             <img src={assets.profile_icon} alt="" />
             <ul className="nav-profile-dropdown">
               <li onClick={() => navigate("/myorders")}>
-                <img src={assets.bag_icon} alt="" />
+                <span>
+                  <FaBoxArchive size={14} />
+                </span>
                 <p>Orders</p>
               </li>
               <hr />
               <li>
-                <img src={assets.logout_icon} alt="" />
+                <span>
+                  <IoLogOutSharp size={18} />
+                </span>
                 <p onClick={logout}>Logout</p>
               </li>
             </ul>

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { assets } from "../../assets/assets";
+import { FaClipboardList } from "react-icons/fa";
 import "./Sidebar.css";
 
 const Sidebar = () => {
@@ -12,7 +13,9 @@ const Sidebar = () => {
           <p>Add Item</p>
         </NavLink>
         <NavLink to="/list" className="sidebar-option">
-          <img src={assets.order_icon} alt="" />
+          <span>
+            <FaClipboardList size={28} />
+          </span>
           <p>List Item</p>
         </NavLink>
         <NavLink to="/order" className="sidebar-option">

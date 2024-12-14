@@ -47,7 +47,7 @@ const List = ({ url }) => {
               <img src={`${url}/images/` + item.image} alt="" />
               <p>{item.name}</p>
               <p>{item.category}</p>
-              <p>{item.price}$</p>
+              <p>{item.price}rs</p>
               <p onClick={() => removeFunction(item._id)} className="cursor">
                 X
               </p>

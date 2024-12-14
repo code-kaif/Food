@@ -41,7 +41,7 @@ const MyOrder = () => {
                   }
                 })}
               </p>
-              <p>{order.amount}$</p>
+              <p>{order.amount}rs</p>
               <p>Items : {order.items.length}</p>
               <p>
                 <span>

@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import "./FoodItem.css";
 import { assets } from "../../assets/frontend_assets/assets";
 import { StoreContext } from "../../context/StoreContext";
+import { FaStar } from "react-icons/fa";
 
 const FoodItem = ({ id, name, description, image, price }) => {
   const { cartItem, addToCart, removeFromCart, url } = useContext(StoreContext);
@@ -42,7 +43,7 @@ const FoodItem = ({ id, name, description, image, price }) => {
           <img src={assets.rating_starts} alt="" />
         </div>
         <p className="food-item-desc">{description}</p>
-        <div className="food-item-price">${price}</div>
+        <div className="food-item-price">{price}rs</div>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const Add = ({ url }) => {
         name: "",
         description: "",
         price: "",
-        category: "",
+        category: responce.data.category,
       });
       setImage(false);
       toast.success(responce.data.message);
@@ -87,8 +87,12 @@ const Add = ({ url }) => {
         </div>
         <div className="add-category-price">
           <div className="add-category flex-col">
-            <p>Product Category</p>
-            <select name="category">
+            <p>Category</p>
+            <select
+              name="category"
+              value={data.category}
+              onChange={onChangeHandler}
+            >
               <option value="Salad">Salad</option>
               <option value="Rolls">Rolls</option>
               <option value="Deserts">Deserts</option>
@@ -106,7 +110,7 @@ const Add = ({ url }) => {
               value={data.price}
               type="Number"
               name="price"
-              placeholder="$10"
+              placeholder="100rs"
               required
             />
           </div>

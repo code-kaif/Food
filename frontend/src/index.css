@@ -26,3 +26,21 @@ a {
     opacity: 1;
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  background-color: rgb(217, 250, 219); /* Background color of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(100, 200, 130);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(80, 180, 87);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(240, 240, 240);
+}

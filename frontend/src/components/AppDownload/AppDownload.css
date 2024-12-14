@@ -1,7 +1,7 @@
 .app-download {
   margin: auto auto;
   margin-top: 100px;
-  font-size: max(3vw, 20px);
+  font-size: 50px;
   text-align: center;
   font-weight: 500;
 }
@@ -19,4 +19,13 @@
 }
 .app-download-platform img:hover {
   transform: scale(1.05);
+}
+.app-download p span {
+  color: #0ec95f;
+}
+
+@media (max-width: 600px) {
+  .app-download {
+    font-size: 24px;
+  }
 }
