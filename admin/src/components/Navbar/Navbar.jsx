@@ -5,8 +5,8 @@ import { assets } from "../../assets/assets";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <h1 className="logo">Parmal</h1>
-      <p>Admin Panel</p>
+      <h1 className="logo">BiteRush</h1>
+      <p>BiteRush</p>
     </div>
   );
 };
