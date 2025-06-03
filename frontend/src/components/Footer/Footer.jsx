@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <h1 className="logo">Parmal</h1>
+          <h1 className="logo">BiteRush</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             officia, quisquam porro esse commodi asperiores impedit fuga iste
@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 &copy; Tomato.com - All Right Reserved.
+        Copyright 2024 &copy; BiteRush.com - All Right Reserved.
       </p>
     </div>
   );
