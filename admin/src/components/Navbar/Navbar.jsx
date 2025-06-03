@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <h1 className="logo">BiteRush</h1>
-      <p>BiteRush</p>
+      <p>BiteRush Admin</p>
     </div>
   );
 };
